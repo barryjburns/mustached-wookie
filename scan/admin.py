@@ -1,3 +1,5 @@
 from django.contrib import admin
 
-# Register your models here.
+from scan import Scan, Scanner
+
+for model in Scan, Scanner: admin.site.register(model)
